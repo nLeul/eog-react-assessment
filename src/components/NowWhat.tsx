@@ -8,6 +8,7 @@ import ListItem from '@material-ui/core/ListItem';
 import ListItemText from '@material-ui/core/ListItemText';
 import { makeStyles } from '@material-ui/core/styles';
 import Avatar from './Avatar';
+import MetricsList from '../Features/Dashboard/MetricsList';
 
 const useStyles = makeStyles({
   card: {
@@ -21,7 +22,8 @@ export default () => {
     <Card className={classes.card}>
       <CardHeader title="OK, Leul, you're all setup. Now What?" />
       <CardContent>
-        <List>
+        <MetricsList/>
+        {/* <List>
           <ListItem>
             <Avatar>1</Avatar>
             <ListItemText primary="Explore the GraphQL API" />
@@ -42,7 +44,7 @@ export default () => {
             <Avatar>5</Avatar>
             <ListItemText primary="Submit Your App" />
           </ListItem>
-        </List>
+        </List> */}
 
         <Typography variant="body1">
           Remember to refer to our <a href="https://react.eogresources.com/assessing">How We Assess Submissions</a>{' '}
